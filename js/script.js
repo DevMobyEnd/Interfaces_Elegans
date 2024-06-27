@@ -41,3 +41,16 @@ let lastChecked = null; // Variable para almacenar el último radio button selec
             lastChecked = radio; // Actualiza lastChecked con el radio button actualmente seleccionado
         }
     }
+
+    function postMessage() {
+        var message = document.getElementById('chatMessage').value;
+        if (message.trim() == '') return; // No hacer nada si el mensaje está vacío
+    
+        var chatWindow = document.getElementById('chatWindow');
+        var newMessage = document.createElement('p');
+        newMessage.textContent = message;
+        chatWindow.appendChild(newMessage);
+    
+        document.getElementById('chatMessage').value = ''; // Limpiar el campo de entrada
+        chatWindow.scrollTop = chatWindow.scrollHeight; // Desplazar al último mensaje
+    }

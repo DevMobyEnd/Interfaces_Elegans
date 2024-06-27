@@ -72,83 +72,23 @@
             </nav>
             <main class="content px-3 py-2">
                 <div class="container-fluid">
-                    <div class="mb-3">
-                        <h4>Panel de control de Usuario</h4>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Bienvenido de vuelta, Usuario</h4>
-                                                <p class="mb-0">Panel de Usuario, @Elsarco</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 align-self-end text-end">
-                                            <img id="usuario" src="image/profile.jpg" class="img-fluid illustration-img"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                </div>
+                    
+                  Solicitar 
+                  <div class="card border-0 solicitud-cancion-container">
+                    <div class="container mt-4">
+                        <h2>Solicitar Canción</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombreCancion" class="form-label">Nombre de la Canción</label>
+                                <input type="text" class="form-control" id="nombreCancion" placeholder="Ingresa el nombre de la canción">
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h4 class="mb-2">
-                                                Jhonny Alexander Gonzalez Torres
-                                            </h4>
-                                            <p class="mb-2">
-                                                @Elsarco
-                                            </p>
-                                            <div class="user-stats-container">
-                                                <div class="user-stats mb-0">
-                                                    <span class="user-stats__item  me-2">
-                                                        <span class="user-stats__count">0</span><br>
-                                                        <span class="user-stats__label">Solicitudes</span>
-                                                    </span>
-                                                </div>
-                                                <div class="user-stats mb-0">
-                                                    <span class="user-stats__item  me-2">
-                                                        <span class="user-stats__count">0</span><br>
-                                                        <span class="user-stats__label">Seguidores </span>
-                                                    </span>
-                                                </div>
-                                                <div class="user-stats mb-0">
-                                                    <span class="user-stats__item  me-2">
-                                                        <span class="user-stats__count">0</span><br>
-                                                        <span class="user-stats__label">Comentarios</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex justify-content-center edit-profile-btn-wrapper">
-                                                <a href="SeccionEditarperfil.html" class="edit-profile-btn">Editar Perfil</a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
+                        
+                            <div class="d-flex justify-content-center edit-profile-btn-wrapper btn-wrapper-adjusted">
+                                <a href="SeccionPerfilUsuarioSolic.html" class="edit-profile-btn2">Solicitar</a>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                    Tabla de solicitudes
-                    <div class="card border-0">
-                        <img src="image/sonrisa.png" alt="" class="img-fluid img-small">
-                        <hr style="background-color: #cee1fe; height: 4px; margin-top: 0;">
-                        <div class="text-center">
-                            <h4>@Elsarco aún no ha hecho solicitudes de música</h4>
-                            <p class="text-gray text-medium">Solicitudes de musica @Elsarco Tus solicitudes de musica
-                                aparecerán aquí acomodadas aqui en una tabla de no ser hasi.</p>
-                        </div>
-                        <div class="d-flex justify-content-center edit-profile-btn-wrapper btn-wrapper-adjusted">
-                            <a href="SeccionSolicitarSoli.html" class="edit-profile-btn2">Realiza una solicitu de musica ¡Animate!</a>
-                        </div>
-                       
-                    </div>
+                </div>
                     <!-- Modal de Términos y Condiciones -->
                     <div class="modal fade" id="terminosCondicionesModal" tabindex="-1"
                     aria-labelledby="terminosCondicionesModalLabel" aria-hidden="true">
@@ -217,7 +157,7 @@
                         </div>
                         <div class="col-6 text-end">
                             <ul class="list-inline">
-                                
+                               
                                 <li class="list-inline-item">
                                     <a href="#" class="text-muted" data-bs-toggle="modal"
                                         data-bs-target="#terminosCondicionesModal">Términos y Condiciones</a>

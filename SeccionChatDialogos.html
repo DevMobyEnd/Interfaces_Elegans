@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFSYGPE6F3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -35,18 +33,15 @@
                     <li class="sidebar-item">
                         <a href="index.html" class="sidebar-link">
                             <i class="fa-solid fa-house"></i>
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="SeccionChatDialogos.html" class="sidebar-link">
-                            <i class="fa-solid fa-comments"></i>
-                            Canal de Dialogo
+                            Hone
                         </a>
                     </li>
                     
+                    
 
-                   
+
+
+
                 </ul>
             </div>
         </aside>
@@ -57,97 +52,36 @@
                 </button>
                 <div class="navbar-collapse navbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                <img src="image/profile.jpg" class="avatar img-fluid rounded" alt="">
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-
-                                <a href="SeccionEditarperfil.html" class="dropdown-item">Ajustes</a>
-                                <a href="index.html" class="dropdown-item">Cerrar sesión</a>
-                            </div>
+                        <li class="nav-item">
+                            <a href="Seccionlogin.html" class="nav-link">Iniciar Sección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Seccionregisters.html" class="nav-link">Registrarse</a>
                         </li>
                     </ul>
                 </div>
             </nav>
             <main class="content px-3 py-2">
                 <div class="container-fluid">
-                    <div class="mb-3">
-                        <h4>Panel de control de Usuario</h4>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0 illustration">
-                                <div class="card-body p-0 d-flex flex-fill">
-                                    <div class="row g-0 w-100">
-                                        <div class="col-6">
-                                            <div class="p-3 m-1">
-                                                <h4>Bienvenido de vuelta, Usuario</h4>
-                                                <p class="mb-0">Panel de Usuario, @Elsarco</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 align-self-end text-end">
-                                            <img id="usuario" src="image/profile.jpg" class="img-fluid illustration-img"
-                                                alt="">
-                                        </div>
-                                    </div>
+
+  
+              
+                    <div class="container mt-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Chat Global
+                            </div>
+                            <div class="card-body" id="chatWindow" style="height: 300px; overflow-y: scroll;">
+                                <!-- Los mensajes del chat se mostrarán aquí -->
+                                <p class="text-muted">Los mensajes aparecerán aquí...</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="input-group">
+                                    <input type="text" id="chatMessage" class="form-control" placeholder="Escribe tu mensaje aquí...">
+                                    <button class="btn btn-primary" type="button" onclick="postMessage()">Enviar</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 d-flex">
-                            <div class="card flex-fill border-0">
-                                <div class="card-body py-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="flex-grow-1">
-                                            <h4 class="mb-2">
-                                                Jhonny Alexander Gonzalez Torres
-                                            </h4>
-                                            <p class="mb-2">
-                                                @Elsarco
-                                            </p>
-                                            <div class="user-stats-container">
-                                                <div class="user-stats mb-0">
-                                                    <span class="user-stats__item  me-2">
-                                                        <span class="user-stats__count">0</span><br>
-                                                        <span class="user-stats__label">Solicitudes</span>
-                                                    </span>
-                                                </div>
-                                                <div class="user-stats mb-0">
-                                                    <span class="user-stats__item  me-2">
-                                                        <span class="user-stats__count">0</span><br>
-                                                        <span class="user-stats__label">Seguidores </span>
-                                                    </span>
-                                                </div>
-                                                <div class="user-stats mb-0">
-                                                    <span class="user-stats__item  me-2">
-                                                        <span class="user-stats__count">0</span><br>
-                                                        <span class="user-stats__label">Comentarios</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex justify-content-center edit-profile-btn-wrapper">
-                                                <a href="SeccionEditarperfil.html" class="edit-profile-btn">Editar Perfil</a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    Tabla de solicitudes
-                    <div class="card border-0">
-                        <img src="image/sonrisa.png" alt="" class="img-fluid img-small">
-                        <hr style="background-color: #cee1fe; height: 4px; margin-top: 0;">
-                        <div class="text-center">
-                            <h4>@Elsarco aún no ha hecho solicitudes de música</h4>
-                            <p class="text-gray text-medium">Solicitudes de musica @Elsarco Tus solicitudes de musica
-                                aparecerán aquí acomodadas aqui en una tabla de no ser hasi.</p>
-                        </div>
-                        <div class="d-flex justify-content-center edit-profile-btn-wrapper btn-wrapper-adjusted">
-                            <a href="SeccionSolicitarSoli.html" class="edit-profile-btn2">Realiza una solicitu de musica ¡Animate!</a>
-                        </div>
-                       
                     </div>
                     <!-- Modal de Términos y Condiciones -->
                     <div class="modal fade" id="terminosCondicionesModal" tabindex="-1"
@@ -176,7 +110,8 @@
                                 <p>3.2 Nos reservamos el derecho de moderar y filtrar las solicitudes para
                                     mantener un ambiente adecuado y seguro.</p>
                                 <h6>Propiedad Intelectual</h6>
-                                <p>4.1 Todos los derechos de propiedad intelectual relacionados con Elegans, incluidos derechos de autor y marcas comerciales,
+                                <p>4.1 Todos los derechos de propiedad intelectual relacionados con Elegans,
+                                    incluidos derechos de autor y marcas comerciales,
                                     pertenecen a nosotros o a nuestros licenciatarios.</p>
                                 <h6>Privacidad</h6>
                                 <p>5.1 La privacidad de los usuarios es importante para nosotros. Consulta
@@ -217,7 +152,7 @@
                         </div>
                         <div class="col-6 text-end">
                             <ul class="list-inline">
-                                
+                           
                                 <li class="list-inline-item">
                                     <a href="#" class="text-muted" data-bs-toggle="modal"
                                         data-bs-target="#terminosCondicionesModal">Términos y Condiciones</a>

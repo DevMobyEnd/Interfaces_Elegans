@@ -294,3 +294,28 @@ html[data-bs-theme="light"] .theme-toggle .fa-sun {
     max-width: 800px; /* Ajusta este valor según tus necesidades */
   
 }
+
+    /* Estilos existentes */
+    
+    .navbar-nav .nav-link:hover {
+        color: #fff; /* Cambia el color del texto a blanco */
+        text-decoration: none; /* Elimina la línea subrayada */
+    }
+
+    .list-inline-item a:hover {
+        color: #fff!important; /* Cambia el color del texto a blanco */
+
+        text-decoration: none; /* Elimina la línea subrayada */
+    }
+    .text-start a:hover {
+        color: #fff!important; /* Cambia el color del texto a blanco */
+        text-decoration: none; /* Elimina la línea subrayada */
+    }
+
+    
+    .solicitud-cancion-container {
+        max-width: 600px; /* Ajusta este valor según necesites */
+        margin: auto; /* Esto centra el contenedor horizontalmente */
+        padding: 20px; /* Espaciado interior para que el contenido no toque los bordes */
+    }
+    

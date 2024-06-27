@@ -24,31 +24,23 @@
             <!-- Content For Sidebar -->
             <div class="h-100">
                 <div class="sidebar-logo">
-                    <a href="#">CodzSword</a>
+                    <a href="#"><img class="img-fluid" src="Logo.png" alt="" style="width: 200px; height:200px;position: relative;    top: -60px;" ></a>
                 </div>
                 <ul class="sidebar-nav">
                     <li class="sidebar-header">
                         Elementos de Usuario
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
+                        <a href="index.html" class="sidebar-link">
                             <i class="fa-solid fa-house"></i>
-                            Hone
+                            Inicio
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-solid fa-file-lines pe-2"></i>
-                            Pages
+                        <a href="SeccionChatDialogos.html" class="sidebar-link">
+                            <i class="fa-solid fa-comments"></i>
+                            Canal de Dialogo
                         </a>
-                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Page 1</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Page 2</a>
-                            </li>
-                        </ul>
                     </li>
 
 
@@ -109,7 +101,7 @@
                                         <!-- Contraseña -->
                                         <div class="fieldset" role="group">
                                             <label for="settings-name" class="col-md-2 align__item text-gray"
-                                                style="font-weight: bold; font-size: 20px; padding-left: 20px;">Contraseña</label>
+                                                style="font-weight: bold; font-size: 20px; padding-left: 15px;">Contraseña</label>
                                             <div
                                                 class="fieldset__block align__item d-flex flex-column align-items-start mt-3 mt-md-0 ms-2 ms-md-3 ms-lg-4 px-2 py-2 me-md-3">
                                                 <input type="password" name="display_name"
@@ -247,8 +239,8 @@
                                                                         role="group">
                                                                         <div
                                                                             class="d-flex justify-content-center edit-profile-btn-wrapper btn-wrapper-adjusted">
-                                                                            <button
-                                                                                class="edit-profile-btn2">Eliminar Cuenta</button>
+                                                                            <button class="edit-profile-btn2">Eliminar
+                                                                                Cuenta</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -262,7 +254,7 @@
                                         <!-- Nueva Contraseña -->
                                         <div class="fieldset" role="group">
                                             <label for="settings-name" class="col-md-2 align__item text-gray"
-                                                style="font-weight: bold; font-size: 20px; padding-left: 20px;">Nueva
+                                                style="font-weight: bold; font-size: 20px; padding-left: 15px;">Nueva
                                                 Contraseña</label>
                                             <div
                                                 class="fieldset__block align__item d-flex flex-column align-items-start mt-3 mt-md-0 ms-2 ms-md-3 ms-lg-4 px-2 py-2 me-md-3">
@@ -294,6 +286,56 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Modal de Términos y Condiciones -->
+                            <div class="modal fade" id="terminosCondicionesModal" tabindex="-1"
+                                aria-labelledby="terminosCondicionesModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="terminosCondicionesModalLabel">Términos y
+                                                Condiciones de Uso</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Cerrar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6>Introducción</h6>
+                                            <p>1.1 Bienvenido a Elegans. Estos términos y condiciones
+                                                rigen el uso de nuestra plataforma de solicitudes de música en tiempo
+                                                real.</p>
+                                            <h6>Uso de la Plataforma</h6>
+                                            <p>2.1 Al acceder y utilizar Elegans, aceptas cumplir con
+                                                estos términos y cualquier otra política que podamos publicar.</p>
+                                            <p>2.2 Solo puedes utilizar nuestra plataforma de acuerdo con todas las
+                                                leyes y regulaciones aplicables.</p>
+                                            <h6>Solicitudes de Música</h6>
+                                            <p>3.1 Elegans permite a los usuarios enviar solicitudes de
+                                                canciones a DJs en bares o discotecas participantes.</p>
+                                            <p>3.2 Nos reservamos el derecho de moderar y filtrar las solicitudes para
+                                                mantener un ambiente adecuado y seguro.</p>
+                                            <h6>Propiedad Intelectual</h6>
+                                            <p>4.1 Todos los derechos de propiedad intelectual relacionados con Elegans, incluidos derechos de autor y marcas comerciales,
+                                                pertenecen a nosotros o a nuestros licenciatarios.</p>
+                                            <h6>Privacidad</h6>
+                                            <p>5.1 La privacidad de los usuarios es importante para nosotros. Consulta
+                                                nuestra Política de Privacidad para obtener información sobre cómo
+                                                recopilamos, usamos y protegemos tus datos personales.</p>
+                                            <h6>Limitación de Responsabilidad</h6>
+                                            <p>6.1 No somos responsables de ningún daño directo, indirecto, incidental,
+                                                especial, consecuente o punitivo derivado del uso de Elegans.</p>
+                                            <h6>Modificaciones</h6>
+                                            <p>7.1 Nos reservamos el derecho de modificar estos términos y condiciones
+                                                en cualquier momento. Las modificaciones entrarán en vigor al ser
+                                                publicadas en la plataforma.</p>
+                                            <h6>Legislación Aplicable</h6>
+                                            <p>8.1 Estos términos y condiciones se rigen por las leyes vigentes en [País
+                                                o Estado].</p>
+                                            <h6>Contacto</h6>
+                                            <p>9.1 Para cualquier pregunta sobre estos términos y condiciones, por favor
+                                                contáctanos a Admin@Elegans.com .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -321,7 +363,8 @@
                                     <a href="#" class="text-muted"> Acerca de Nosotros</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-muted">Términos</a>
+                                    <a href="#" class="text-muted" data-bs-toggle="modal"
+                                        data-bs-target="#terminosCondicionesModal">Términos y Condiciones</a>
                                 </li>
 
                             </ul>

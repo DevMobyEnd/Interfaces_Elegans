@@ -1,0 +1,68 @@
+<form class="form">
+    <div class="form__header--mobile visible-md">
+    <a href="/home/settings/" class="form__header--mobile-back"><span class="icon-left-bracket"></span></a><h2>Confirmación de la cuenta</h2></div>
+    <div class="form__header">
+    <h1 class="form-heading">Confirmación de la cuenta</h1>
+    <p class="form-description text-gray text-medium">Hacer esto borrará cualquier sitio registrado bajo esta cuenta y los comentarios contenidos en ellos. También se eliminarán las observaciones hechas por esta cuenta en otros sitios. - Estás segura?</p>
+    </div>
+    <div class="form__content">
+    <div class="fieldset" role="group" data-role="notification">
+    <div class="fieldset__label align__item text-gray">Háganos saber por qué se va (requerí)</div>
+    <div class="fieldset__block align__item">
+    <div class="fieldset__block--radio">
+    
+    <label class="text-medium"><input type="radio" name="reason" value="0">No puedo conseguir que Disqus trabaje en mi sitio.</label>
+    </div>
+    <p class="fieldset__description -radio text-gray text-small hidden" data-role="delete-resolution">El mejor lugar para empezar es nuestra <a target="_blank" href="https://help.disqus.com">Base</a> de Conocimientos. Si todavía tienes problemas, dispáranos un correo electrónico en <a href="mailto:help@disqus.com">help.disqus.com</a> y te haremos cargo.</p>
+    <div class="fieldset__block--radio">
+    
+    <label class="text-medium"><input type="radio" name="reason" value="1">Recibo demasiadas notificaciones de correos electrónicos.</label>
+    </div>
+    <p class="fieldset__description -radio text-gray text-small hidden" data-role="delete-resolution">Para ayudar a suprimir la cantidad de notificaciones de correo electrónico que está recibiendo, puede cambiar sus opciones aquí: <a href="https://disqus.com/home/settings/email/">Configuración y notificaciones de correo electrónico</a>.</p>
+    <div class="fieldset__block--radio">
+    
+    <label class="text-medium"><input type="radio" name="reason" value="2">Paso demasiado tiempo usando Disqus.</label>
+    </div>
+    <p class="fieldset__description -radio text-gray text-small hidden" data-role="delete-resolution">Una forma de controlar su interacción con Disqus es limitar el número de correos electrónicos que recibe de nosotros en <a href="https://disqus.com/home/settings/email/">Ajustes &amp;gt; Email Notificaciones</a>.</p>
+    <div class="fieldset__block--radio">
+    
+    <label class="text-medium"><input type="radio" name="reason" value="3">No encuentro a Disqus útil.</label>
+    </div>
+    <p class="fieldset__description -radio text-gray text-small hidden" data-role="delete-resolution">Usted puede encontrar Disqus más útil al conectarse con más de sus amigos.
+    Puedes añadir más de tus amigos aquí <a href="https://disqus.com/follow/">https://disqus.com/follow/</a> o aprendiendo sobre todas nuestras funciones: <a href="https://disqus.com/about/">https://disqus.com/about/</a></p>
+    <div class="fieldset__block--radio">
+    
+    <label class="text-medium"><input type="radio" name="reason" value="4">No puedo cambiar mi nombre.</label>
+    </div>
+    <p class="fieldset__description -radio text-gray text-small hidden" data-role="delete-resolution">Puedes cambiar tu nombre de visualización yendo a tu <a href="https://disqus.com/home/settings/profile/">configuración de perfil</a></p>
+    <div class="fieldset__block--radio">
+    
+    <label class="text-medium"><input type="radio" name="reason" value="5">Otros</label>
+    </div>
+    <p class="fieldset__description -radio text-gray text-small hidden" data-role="delete-resolution">Podrías explicarlo más?
+    
+    <br><textarea class="input--textbox" id="delete-other" name="details"></textarea></p>
+    </div>
+    </div>
+    <div class="fieldset" role="group">
+    <label for="settings-delete-passwordusername" class="fieldset__label align__item text-gray">Contraseña</label>
+    <div class="fieldset__block align__item">
+    <div class="fieldset__block--text">
+    <protonpass-control-546e data-protonpass-role="icon"></protonpass-control-546e><input type="password" class="input--textbox" name="password" id="settings-delete-password" required="" style="padding-right: 39.2px !important;" data-protonpass-base-css="{&quot;padding-right&quot;:&quot;&quot;}">
+    </div>
+    </div>
+    </div>
+    <div class="fieldset" role="group">
+    <div class="fieldset__block align__item">
+    <p class="fieldset__description text-gray text-small">Tenga en cuenta que puede tomar hasta 24 horas para que su cuenta sea eliminada del sistema.</p>
+    <p class="fieldset__description fieldset__description--error text-small" data-role="error-alert"></p>
+    </div>
+    </div>
+    </div>
+    <div class="form__footer">
+    <div class="fieldset" role="group">
+    <div class="fieldset__label" data-role="save-status"><div class="spinner-small"></div><div class="icon-checkmark"></div></div>
+    <div class="fieldset__block"><input type="submit" class="button button-fill--brand text-medium" value="Delete my account"></div>
+    </div>
+    </div>
+    </form>

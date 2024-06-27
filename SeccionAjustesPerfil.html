@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NFSYGPE6F3');
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">CodzSword</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Elementos de Usuario
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-house"></i>
+                            Hone
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-file-lines pe-2"></i>
+                            Pages
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Page 1</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Page 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <img src="image/profile.jpg" class="avatar img-fluid rounded" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+
+                                <a href="#" class="dropdown-item">Ajustes</a>
+                                <a href="#" class="dropdown-item">Cerrar sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+
+                    Ajustes
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <!-- Columna para la información de la cuenta -->
+                            <div class="col-md-9">
+                                <div class="card border-0">
+                                    <h5><span>Cuenta</span></h5>
+                                    <p>información básica de su cuenta.</p>
+                                    <hr style="background-color: #cee1fe; height: 4px; margin-top: 0;">
+                                    <div class="form__content">
+                                        <!-- Correo electrónico -->
+                                        <div class="fieldset" role="group">
+                                            <label for="settings-email" class="col-md-2 align__item text-gray"
+                                                style="font-weight: bold; font-size: 20px; padding-left: 20px;">Correo
+                                                electrónico</label>
+                                            <div
+                                                class="fieldset__block align__item d-flex flex-column align-items-start mt-3 mt-md-0 ms-2 ms-md-3 ms-lg-4 px-2 py-2 me-md-3">
+                                                <input type="email" id="settings-email" name="email"
+                                                    class="input--textbox form-control"
+                                                    value="jhonnygonsalez7@gmail.com">
+                                                <p class="fieldset__description text-gray text-small mt-2">Cambiar su
+                                                    correo electrónico requiere que lo verifique. Simelo hacer clic en
+                                                    el botón grande en el correo electrónico que enviamos a la nueva
+                                                    dirección de correo electrónico.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Contraseña -->
+                                        <div class="fieldset" role="group">
+                                            <label for="settings-name" class="col-md-2 align__item text-gray"
+                                                style="font-weight: bold; font-size: 20px; padding-left: 20px;">Contraseña</label>
+                                            <div
+                                                class="fieldset__block align__item d-flex flex-column align-items-start mt-3 mt-md-0 ms-2 ms-md-3 ms-lg-4 px-2 py-2 me-md-3">
+                                                <input type="password" name="display_name"
+                                                    class="input--textbox form-control" value="">
+                                                <p class="fieldset__description text-gray text-small mt-2">Olvidó tu
+                                                    contraseña? <a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#recuperacionContrasenaModal">Solicito un correo
+                                                        electrónico de recuperación de contraseña.</a></p>
+                                            </div>
+                                        </div>
+                                        <!-- Modal de Recuperación de Contraseña -->
+                                        <div class="modal fade" id="recuperacionContrasenaModal" tabindex="-1"
+                                            aria-labelledby="recuperacionContrasenaModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog ">
+                                                <div class="modal-content">
+                                                    <div class="modal-header text-center ">
+
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <h5 class="modal-title"
+                                                                    id="recuperacionContrasenaModalLabel">¿Olvidaste tu
+                                                                    contraseña?</h5>
+                                                                <p>Ingrese su dirección de correo electrónico para que
+                                                                    podamos enviarle un correo electrónico para
+                                                                    restablecerla.</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label for="email-recuperacion"
+                                                                    class="col-form-label">Correo Electrónico:</label>
+                                                                <input type="email" class="form-control"
+                                                                    id="email-recuperacion">
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">Cerrar</button>
+                                                                <button type="submit" class="btn btn-primary">Enviar
+                                                                    Código</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal de motivos por el cual elimina la cuenta  -->
+                                        <div class="modal fade" id="deleteAccountModal" tabindex="-1"
+                                            aria-labelledby="deleteAccountModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header text-center">
+                                                        <h5 class="modal-titleno" id="deleteAccountModalLabel"
+                                                            style="font-size: 24px; font-weight: bold; ">
+                                                            Confirmación para eliminar la cuenta</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Cerrar"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <!-- Contenido del formulario -->
+                                                        <form class="form">
+                                                            <div class="form__header">
+                                                                <p class="form-description text-gray text-medium">Hacer
+                                                                    esto borrará cualquier sitio registrado bajo esta
+                                                                    cuenta y los comentarios contenidos en ellos.
+                                                                    También se eliminarán las observaciones hechas por
+                                                                    esta cuenta en otros sitios. - Estás segura?</p>
+                                                            </div>
+                                                            <div class="form__content">
+                                                                <!-- Razones para eliminar la cuenta -->
+                                                                <div class="fieldset" role="group"
+                                                                    data-role="notification">
+                                                                    <div class="fieldset__block align__item">
+                                                                        <label class="text-medium"
+                                                                            for="settings-delete-reason"><span>Háganos
+                                                                                saber por qué se va</span> </label>
+                                                                    </div>
+                                                                    <!-- Opciones de razones -->
+                                                                    <div class="fieldset__block align__item">
+                                                                        <div class="fieldset__block--radio">
+                                                                            <label class="text-medium">
+                                                                                <input type="radio" name="reason"
+                                                                                    value="0"
+                                                                                    onclick="toggleRadio(this)">Paso
+                                                                                demasiado tiempo usando Elegans
+                                                                            </label>No puedo cambiar mi
+                                                                            nombre
+                                                                        </div>
+                                                                        <!-- Repite para otras opciones -->
+                                                                        <div class="fieldset__block--radio">
+                                                                            <label class="text-medium">
+                                                                                <input type="radio" name="reason"
+                                                                                    value="0"
+                                                                                    onclick="toggleRadio(this)">No puedo
+                                                                                cambiar mi
+                                                                                nombre
+                                                                            </label>No encuentro a Elegans
+                                                                            útil
+                                                                        </div>
+                                                                        <div class="fieldset__block--radio">
+                                                                            <label class="text-medium">
+                                                                                <input type="radio" name="reason"
+                                                                                    value="0"
+                                                                                    onclick="toggleRadio(this)">No
+                                                                                encuentro a Elegans
+                                                                                útil
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="fieldset__block--radio">
+                                                                            <label class="text-medium">
+                                                                                <input type="radio" name="reason"
+                                                                                    value="0"
+                                                                                    onclick="toggleRadio(this)">Otros
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- Contraseña -->
+                                                                    <div class="fieldset" role="group">
+                                                                        <label for="settings-delete-password"
+                                                                            class="fieldset__label align__item text-gray">Contraseña</label>
+                                                                        <div class="fieldset__block align__item">
+                                                                            <input type="password" class="form-control"
+                                                                                name="password"
+                                                                                id="settings-delete-password"
+                                                                                required=""
+                                                                                style="width: 250px; margin-top: 5px;">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form__footer" style="margin-top: 20px;">
+                                                                    <!-- Ajusta el valor de 20px según necesites -->
+                                                                    <div class="fieldset d-flex justify-content-center edit-profile-btn-wrapper btn-wrapper-adjusted"
+                                                                        role="group">
+                                                                        <div
+                                                                            class="d-flex justify-content-center edit-profile-btn-wrapper btn-wrapper-adjusted">
+                                                                            <button
+                                                                                class="edit-profile-btn2">Eliminar Cuenta</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Nueva Contraseña -->
+                                        <div class="fieldset" role="group">
+                                            <label for="settings-name" class="col-md-2 align__item text-gray"
+                                                style="font-weight: bold; font-size: 20px; padding-left: 20px;">Nueva
+                                                Contraseña</label>
+                                            <div
+                                                class="fieldset__block align__item d-flex flex-column align-items-start mt-3 mt-md-0 ms-2 ms-md-3 ms-lg-4 px-2 py-2 me-md-3">
+                                                <input type="password" name="display_name"
+                                                    class="input--textbox form-control" value="">
+                                                <p class="fieldset__description text-gray text-small mt-2">Si está en
+                                                    blanco, sus Apellidos de usuario se mostrará en su lugar.</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="d-flex justify-content-center edit-profile-btn-wrapper btn-wrapper-adjusted">
+                                            <button class="edit-profile-btn2">Actualizar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Columna para borrar la cuenta -->
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <h5><span>Borrar su cuenta de Elegans</span></h5>
+                                    <p>Esto no se puede invertir, así que asegúrese de que está seguro de que esto es lo
+                                        que quiere.</p>
+                                    <hr style="background-color: #cee1fe; height: 4px; margin-top: 0;">
+                                    <div
+                                        class="d-flex justify-content-center edit-profile-btn-wrapper btn-wrapper-adjusted">
+                                        <!-- Botón para activar el modal -->
+                                        <a href="#" class="edit-profile-btn2" data-bs-toggle="modal"
+                                            data-bs-target="#deleteAccountModal">Eliminar Cuenta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <a href="#" class="theme-toggle">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+            </a>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-muted">
+                        <div class="col-6 text-start">
+                            <p class="mb-0">
+                                <a href="#" class="text-muted">
+                                    <strong>Elegans</strong>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-6 text-end">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-muted">Contacto</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-muted"> Acerca de Nosotros</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-muted">Términos</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
